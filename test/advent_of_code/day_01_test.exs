@@ -3,19 +3,28 @@ defmodule AdventOfCode.Day01Test do
 
   import AdventOfCode.Day01
 
-  @tag :skip
-  test "part1" do
-    input = nil
-    result = part1(input)
-
-    assert result
+  def input() do
+    """
+    1721
+    979
+    366
+    299
+    675
+    1456
+    """
   end
 
-  @tag :skip
+  test "part1" do
+    input = input()
+    result = part1(input)
+
+    assert result == 514579
+  end
+
   test "part2" do
-    input = nil
+    input = input()
     result = part2(input)
 
-    assert result
+    assert result == 241861950
   end
 end
